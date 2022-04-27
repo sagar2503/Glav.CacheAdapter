@@ -19,29 +19,29 @@ namespace Glav.CacheAdapter.ExampleUsage
             // Basic examples usage
             var allTestsPassed = SimpleUsageWithTests.ExampleAddAndRetrieveFromCache();
 
-            if (allTestsPassed)
-            {
-                // Basic dependency management usage - if not enabled in the
-                // app.config file, these wont work.
-                allTestsPassed = SimpleUsageWithDependencies.ExampleAddAndClearWithDependencies();
-            }
+            //if (allTestsPassed)
+            //{
+            //    // Basic dependency management usage - if not enabled in the
+            //    // app.config file, these wont work.
+            //    allTestsPassed = SimpleUsageWithDependencies.ExampleAddAndClearWithDependencies();
+            //}
 
-            if (allTestsPassed)
-            {
-                allTestsPassed = SimpleUsageAsync.ExampleAddUsingAsyncCalls();
-            }
+            //if (allTestsPassed)
+            //{
+            //    allTestsPassed = SimpleUsageAsync.ExampleAddUsingAsyncCalls();
+            //}
 
-            if (allTestsPassed)
-            {
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("All Tests passed.");
-            }
-            else
-            {
-                ConsoleHelper.WriteErrMsgToConsole("One or more tests failed.");
-            }
+            //if (allTestsPassed)
+            //{
+            //    Console.ForegroundColor = ConsoleColor.Green;
+            //    Console.WriteLine("All Tests passed.");
+            //}
+            //else
+            //{
+            //    ConsoleHelper.WriteErrMsgToConsole("One or more tests failed.");
+            //}
 
-            // Uncomment this line to simulate about 100,000 hits to the cache engine. 
+            //// Uncomment this line to simulate about 100,000 hits to the cache engine. 
             // This is only available if you have download/copied/cloned the entire solutions source code. If
             // you have simply installed the nuget package, uncommenting this line will cause an error since
             // the cache 'hammering' class in not included in the nuget package.
